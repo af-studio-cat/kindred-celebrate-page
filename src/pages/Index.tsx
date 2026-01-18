@@ -4,11 +4,8 @@ import Envelope from "@/components/wedding/Envelope";
 import Hero from "@/components/wedding/Hero";
 import CouplePhoto from "@/components/wedding/CouplePhoto";
 import Celebration from "@/components/wedding/Celebration";
-import DressCode from "@/components/wedding/DressCode";
-import Playlist from "@/components/wedding/Playlist";
-import PhotoAlbum from "@/components/wedding/PhotoAlbum";
+import ExtrasSection from "@/components/wedding/ExtrasSection";
 import Schedule from "@/components/wedding/Schedule";
-import Gifts from "@/components/wedding/Gifts";
 import ImportantInfo from "@/components/wedding/ImportantInfo";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import Footer from "@/components/wedding/Footer";
@@ -29,11 +26,8 @@ const Index = () => {
           <Hero />
           <CouplePhoto />
           <Celebration />
-          <DressCode />
-          <Playlist />
-          <PhotoAlbum />
+          <ExtrasSection />
           <Schedule />
-          <Gifts />
           <ImportantInfo />
           <RSVPForm />
           <Footer />

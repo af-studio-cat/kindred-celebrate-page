@@ -34,24 +34,24 @@ const Schedule = () => {
         <LeafSprig className="w-10 md:w-14 h-14 md:h-20 rotate-12" />
       </div>
 
-      <Flourish className="mx-auto mb-10" />
+      <Flourish className="mx-auto mb-12" />
       
-      <h2 className="text-elegant-subtitle mb-12">Programació</h2>
+      <h2 className="text-primary-section mb-14">Programació</h2>
       
       <div ref={ref} className="max-w-xs mx-auto relative z-10">
         {scheduleItems.map((item, index) => (
           <motion.div
             key={item.time}
-            className="flex items-center gap-6 mb-8 last:mb-0"
+            className="flex items-center gap-6 mb-10 last:mb-0"
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
           >
-            <span className="font-serif text-xl md:text-2xl text-primary w-20 text-right">
+            <span className="text-script w-20 text-right">
               {item.time}
             </span>
             <div className="timeline-dot flex-shrink-0" />
-            <span className="font-sans text-base md:text-lg text-foreground text-left">
+            <span className="text-functional text-left">
               {item.event}
             </span>
           </motion.div>

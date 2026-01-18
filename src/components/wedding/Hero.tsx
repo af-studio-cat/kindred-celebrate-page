@@ -58,10 +58,10 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <Flourish className="mx-auto mb-8" />
+        <Flourish className="mx-auto mb-10" />
         
         <motion.p
-          className="text-elegant-small mb-6"
+          className="text-script-small mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -70,39 +70,30 @@ const Hero = () => {
         </motion.p>
 
         <motion.h1
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-primary mb-4 tracking-wide"
+          className="text-primary-title mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          Ens casem!
+          Paula i Adrià
         </motion.h1>
 
-        <motion.h2
-          className="font-serif text-3xl md:text-4xl lg:text-5xl font-light italic text-primary mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-        >
-          Paula i Adrià
-        </motion.h2>
-
         <motion.p
-          className="text-elegant-body text-muted-foreground mb-12 max-w-md mx-auto"
+          className="text-script mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.1 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
         >
-          Ens fa molta il·lusió compartir aquest dia amb vosaltres.
+          Ens casem!
         </motion.p>
 
         <motion.div
-          className="inline-block border border-primary/30 px-8 py-4 mb-12"
+          className="inline-block border border-primary/30 px-10 py-5 mb-14"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 1.3 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
         >
-          <p className="font-serif text-3xl md:text-4xl text-primary tracking-widest">
+          <p className="text-primary-subtitle tracking-[0.2em]">
             20 · 06 · 2026
           </p>
         </motion.div>
@@ -111,12 +102,12 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
+          transition={{ duration: 0.8, delay: 1.3 }}
         >
           <Countdown />
         </motion.div>
 
-        <OliveBranch className="mx-auto mt-12 w-36 md:w-48 h-auto opacity-50" />
+        <OliveBranch className="mx-auto mt-16 w-36 md:w-48 h-auto opacity-40" />
       </motion.div>
 
       {/* Scroll indicator */}
