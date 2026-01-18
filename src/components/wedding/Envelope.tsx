@@ -70,8 +70,8 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
             <div className="text-center p-4">
-              <p className="font-serif text-primary text-sm tracking-widest uppercase">Paula & Adrià</p>
-              <p className="font-serif text-primary text-xs mt-2 opacity-60">20 · 06 · 2026</p>
+              <p className="font-primary text-sm tracking-[0.2em] uppercase" style={{ color: 'hsl(147 21% 31%)' }}>Paula & Adrià</p>
+              <p className="font-primary text-xs mt-2 tracking-[0.15em] opacity-60" style={{ color: 'hsl(147 21% 31%)' }}>20 · 06 · 2026</p>
             </div>
           </motion.div>
 
@@ -105,8 +105,8 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
               animate={isOpening ? { scale: 0, opacity: 0 } : { scale: 1, opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary flex items-center justify-center shadow-md">
-                <span className="font-serif text-primary-foreground text-xs md:text-sm">P&A</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md" style={{ backgroundColor: 'hsl(147 21% 31%)' }}>
+                <span className="font-primary text-xs md:text-sm" style={{ color: 'hsl(45 60% 94%)' }}>P&A</span>
               </div>
             </motion.div>
           </motion.div>
@@ -118,7 +118,7 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
 
         {/* Click instruction */}
         <motion.p
-          className="text-center mt-8 font-sans text-sm text-muted-foreground tracking-widest"
+          className="text-center mt-10 text-functional-caps"
           animate={{ opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

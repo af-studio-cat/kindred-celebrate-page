@@ -18,13 +18,13 @@ const Footer = () => {
         <FloralCluster className="w-12 md:w-16 h-12 md:h-16" />
       </div>
 
-      <Flourish className="mx-auto mb-8" />
+      <Flourish className="mx-auto mb-10" />
       
-      <p className="font-serif text-2xl md:text-3xl text-primary mb-4">
+      <p className="text-primary-subtitle mb-4">
         Paula & Adrià
       </p>
       
-      <p className="font-sans text-sm text-muted-foreground tracking-widest">
+      <p className="text-functional-caps">
         20 · 06 · 2026
       </p>
 

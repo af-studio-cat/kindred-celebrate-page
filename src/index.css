@@ -2,43 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Wedding Invitation Design System - Elegant & Minimalist */
+/* Wedding Invitation Design System - Classic Printed Stationery Style */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500&display=swap');
+/* Three-level typography system */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Pinyon+Script&family=Raleway:wght@300;400&display=swap');
 
 @layer base {
   :root {
     /* Egg Yellow Background Palette */
     --background: 45 60% 94%;
-    --foreground: 220 25% 18%;
+    --foreground: 147 21% 31%; /* Forest green for all text */
 
     /* Card surfaces */
     --card: 45 55% 92%;
-    --card-foreground: 220 25% 18%;
+    --card-foreground: 147 21% 31%;
 
     --popover: 45 55% 92%;
-    --popover-foreground: 220 25% 18%;
+    --popover-foreground: 147 21% 31%;
 
-    /* Forest Green - Primary (muted, natural) */
-    --primary: 150 35% 30%;
+    /* Forest Green - Primary #3F5F4E */
+    --primary: 147 21% 31%;
     --primary-foreground: 45 60% 94%;
 
     /* Soft muted tones */
     --secondary: 45 40% 90%;
-    --secondary-foreground: 150 30% 20%;
+    --secondary-foreground: 147 21% 31%;
 
     --muted: 45 35% 88%;
-    --muted-foreground: 150 20% 35%;
+    --muted-foreground: 147 21% 31%;
 
-    --accent: 150 25% 85%;
-    --accent-foreground: 150 35% 25%;
+    --accent: 147 15% 85%;
+    --accent-foreground: 147 21% 31%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 45 60% 94%;
 
     --border: 45 30% 85%;
     --input: 45 35% 88%;
-    --ring: 150 35% 30%;
+    --ring: 147 21% 31%;
 
     --radius: 0.25rem;
 
@@ -46,31 +47,35 @@
     --ivory: 45 60% 94%;
     --cream: 45 50% 90%;
     --egg-yellow: 45 60% 94%;
-    --forest-green: 150 35% 30%;
-    --forest-green-light: 150 30% 45%;
-    --forest-green-dark: 150 40% 22%;
-    --charcoal: 220 25% 18%;
-    --soft-gray: 220 15% 50%;
+    --forest-green: 147 21% 31%;
+    --forest-green-light: 147 18% 45%;
+    --forest-green-dark: 147 25% 22%;
+    --charcoal: 147 21% 31%;
+    --soft-gray: 147 15% 50%;
 
     /* Envelope colors */
     --envelope-back: 42 45% 88%;
     --envelope-front: 45 50% 91%;
     --envelope-flap: 44 40% 86%;
-    --envelope-shadow: 220 20% 65%;
+    --envelope-shadow: 147 15% 65%;
 
-    /* Typography */
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Raleway', system-ui, sans-serif;
+    /* Typography - Three level system */
+    --font-primary: 'Playfair Display', Georgia, serif; /* Titles, names - high contrast serif */
+    --font-script: 'Pinyon Script', cursive; /* Introductory phrases, times, details */
+    --font-sans: 'Raleway', system-ui, sans-serif; /* Practical info, addresses */
+
+    /* Legacy aliases */
+    --font-serif: var(--font-primary);
 
     /* Sidebar (keeping for compatibility) */
     --sidebar-background: 45 60% 94%;
-    --sidebar-foreground: 220 25% 18%;
-    --sidebar-primary: 150 35% 30%;
+    --sidebar-foreground: 147 21% 31%;
+    --sidebar-primary: 147 21% 31%;
     --sidebar-primary-foreground: 45 60% 94%;
     --sidebar-accent: 45 40% 90%;
-    --sidebar-accent-foreground: 150 30% 20%;
+    --sidebar-accent-foreground: 147 21% 31%;
     --sidebar-border: 45 30% 85%;
-    --sidebar-ring: 150 35% 30%;
+    --sidebar-ring: 147 21% 31%;
   }
 }
 
@@ -84,43 +89,133 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background antialiased;
     font-family: var(--font-sans);
+    color: hsl(147 21% 31%);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-primary);
+    color: hsl(147 21% 31%);
   }
 }
 
 @layer components {
-  .font-serif {
-    font-family: var(--font-serif);
+  /* Font family utilities */
+  .font-primary {
+    font-family: var(--font-primary);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
   }
 
   .font-sans {
     font-family: var(--font-sans);
   }
 
-  /* Elegant text styles */
+  /* Legacy alias */
+  .font-serif {
+    font-family: var(--font-primary);
+  }
+
+  /* ========================================
+     THREE-LEVEL TYPOGRAPHIC SYSTEM
+     Classic wedding stationery inspired
+     ======================================== */
+
+  /* LEVEL 1: Primary Typography (Titles & Names)
+     - High contrast serif (Playfair Display)
+     - ALL UPPERCASE
+     - Slightly open tracking
+     - Use for: Names, main date, section titles */
+  
+  .text-primary-title {
+    font-family: var(--font-primary);
+    @apply text-4xl md:text-5xl lg:text-6xl font-normal uppercase tracking-[0.15em];
+    color: hsl(147 21% 31%);
+  }
+
+  .text-primary-subtitle {
+    font-family: var(--font-primary);
+    @apply text-2xl md:text-3xl font-normal uppercase tracking-[0.12em];
+    color: hsl(147 21% 31%);
+  }
+
+  .text-primary-section {
+    font-family: var(--font-primary);
+    @apply text-xl md:text-2xl font-normal uppercase tracking-[0.1em];
+    color: hsl(147 21% 31%);
+  }
+
+  /* LEVEL 2: Script Typography (Handwritten details)
+     - Fine natural script (Pinyon Script)
+     - Small size, generous line height
+     - Use for: Introductory phrases, times, small details */
+  
+  .text-script {
+    font-family: var(--font-script);
+    @apply text-2xl md:text-3xl leading-relaxed;
+    color: hsl(147 21% 31%);
+  }
+
+  .text-script-small {
+    font-family: var(--font-script);
+    @apply text-xl md:text-2xl leading-loose;
+    color: hsl(147 21% 31%);
+  }
+
+  .text-script-large {
+    font-family: var(--font-script);
+    @apply text-3xl md:text-4xl leading-relaxed;
+    color: hsl(147 21% 31%);
+  }
+
+  /* LEVEL 3: Sans Serif Typography (Practical info)
+     - Clean, discrete sans (Raleway)
+     - Use for: Addresses, schedule, functional texts */
+  
+  .text-functional {
+    font-family: var(--font-sans);
+    @apply text-base md:text-lg font-light leading-relaxed;
+    color: hsl(147 21% 31%);
+  }
+
+  .text-functional-small {
+    font-family: var(--font-sans);
+    @apply text-sm font-light tracking-wide;
+    color: hsl(147 21% 31%);
+  }
+
+  .text-functional-caps {
+    font-family: var(--font-sans);
+    @apply text-xs font-light tracking-[0.2em] uppercase;
+    color: hsl(147 21% 31%);
+  }
+
+  /* Legacy elegant text styles - mapped to new system */
   .text-elegant-title {
-    font-family: var(--font-serif);
-    @apply text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-primary;
+    font-family: var(--font-primary);
+    @apply text-4xl md:text-5xl lg:text-6xl font-normal uppercase tracking-[0.15em];
+    color: hsl(147 21% 31%);
   }
 
   .text-elegant-subtitle {
-    font-family: var(--font-serif);
-    @apply text-2xl md:text-3xl font-light italic text-primary;
+    font-family: var(--font-primary);
+    @apply text-2xl md:text-3xl font-normal uppercase tracking-[0.1em];
+    color: hsl(147 21% 31%);
   }
 
   .text-elegant-body {
     font-family: var(--font-sans);
-    @apply text-base md:text-lg font-light leading-relaxed text-foreground;
+    @apply text-base md:text-lg font-light leading-relaxed;
+    color: hsl(147 21% 31%);
   }
 
   .text-elegant-small {
     font-family: var(--font-sans);
-    @apply text-sm font-light tracking-wider uppercase text-muted-foreground;
+    @apply text-sm font-light tracking-wider uppercase;
+    color: hsl(147 21% 31%);
   }
 
   /* Decorative flourish */
@@ -131,23 +226,33 @@
   .flourish::before,
   .flourish::after {
     content: '—';
-    @apply mx-4 text-primary opacity-40;
+    @apply mx-4 opacity-40;
+    color: hsl(147 21% 31%);
   }
 
-  /* Section spacing */
+  /* Section spacing - generous whitespace */
   .section-spacing {
-    @apply py-20 md:py-32 px-6 md:px-12;
+    @apply py-24 md:py-36 px-8 md:px-16;
   }
 
   /* Elegant button */
   .btn-elegant {
     font-family: var(--font-sans);
-    @apply inline-flex items-center justify-center px-8 py-3 text-sm font-light tracking-widest uppercase border border-primary text-primary bg-transparent transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm font-light tracking-[0.15em] uppercase border transition-all duration-300;
+    color: hsl(147 21% 31%);
+    border-color: hsl(147 21% 31%);
+    background: transparent;
+  }
+
+  .btn-elegant:hover {
+    background: hsl(147 21% 31%);
+    color: hsl(45 60% 94%);
   }
 
   /* Timeline dot */
   .timeline-dot {
-    @apply w-2 h-2 rounded-full bg-primary;
+    @apply w-2 h-2 rounded-full;
+    background: hsl(147 21% 31%);
   }
 }
 

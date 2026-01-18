@@ -67,9 +67,9 @@ const RSVPForm = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <FloralHeart className="w-16 h-16 mx-auto mb-6 opacity-60" />
-          <h2 className="text-elegant-subtitle mb-6">Gràcies!</h2>
-          <p className="text-elegant-body text-muted-foreground">
+          <FloralHeart className="w-16 h-16 mx-auto mb-8 opacity-50" />
+          <h2 className="text-primary-section mb-6">Gràcies!</h2>
+          <p className="text-functional">
             Hem rebut la teva confirmació.
           </p>
         </motion.div>
@@ -92,20 +92,20 @@ const RSVPForm = () => {
         <LeafSprig className="w-10 md:w-14 h-14 md:h-20 rotate-12 -scale-x-100" />
       </div>
 
-      <Flourish className="mx-auto mb-10" />
+      <Flourish className="mx-auto mb-12" />
       
-      <h2 className="text-elegant-subtitle mb-6">Confirmació d'assistència</h2>
+      <h2 className="text-primary-section mb-6">Confirmació d'Assistència</h2>
       
-      <p className="text-elegant-body text-muted-foreground mb-10 max-w-md mx-auto">
-        Ens farà molt feliços saber si ens acompanyes.
+      <p className="text-script-small mb-12 max-w-md mx-auto">
+        Ens farà molt feliços saber si ens acompanyes
       </p>
 
-      <form onSubmit={(e) => e.preventDefault()} className="max-w-md mx-auto space-y-6 relative z-10">
+      <form onSubmit={(e) => e.preventDefault()} className="max-w-md mx-auto space-y-8 relative z-10">
         {/* Guest name field */}
         <div className="text-left">
           <label 
             htmlFor="guestName" 
-            className="block font-sans text-sm text-muted-foreground mb-2 tracking-wide"
+            className="block text-functional-caps mb-3"
           >
             Nom de l'invitat *
           </label>
@@ -129,7 +129,7 @@ const RSVPForm = () => {
         <div className="text-left">
           <label 
             htmlFor="companions" 
-            className="block font-sans text-sm text-muted-foreground mb-2 tracking-wide"
+            className="block text-functional-caps mb-3"
           >
             Nom acompanyant/s
           </label>
@@ -151,9 +151,9 @@ const RSVPForm = () => {
         <div className="text-left">
           <label 
             htmlFor="allergies" 
-            className="block font-sans text-sm text-muted-foreground mb-2 tracking-wide"
+            className="block text-functional-caps mb-3"
           >
-            Al·lèrgies alimentàries o restriccions per al menú?
+            Al·lèrgies o restriccions
           </label>
           <textarea
             id="allergies"
@@ -170,7 +170,7 @@ const RSVPForm = () => {
         <div className="text-left">
           <label 
             htmlFor="message" 
-            className="block font-sans text-sm text-muted-foreground mb-2 tracking-wide"
+            className="block text-functional-caps mb-3"
           >
             Missatge per als nuvis
           </label>

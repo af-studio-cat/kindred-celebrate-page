@@ -19,17 +19,11 @@ const Celebration = () => {
         <Sunset className="w-16 md:w-24 h-10 md:h-14" />
       </div>
 
-      <Flourish className="mx-auto mb-10" />
+      <Flourish className="mx-auto mb-12" />
       
-      <h2 className="text-elegant-subtitle mb-8">La celebració</h2>
+      <p className="text-script-small mb-6">La celebració tindrà lloc a</p>
       
-      <p className="text-elegant-body max-w-lg mx-auto mb-8">
-        La celebració tindrà lloc a
-      </p>
-      
-      <p className="font-serif text-2xl md:text-3xl text-primary mb-10">
-        La Masia Brugarolas
-      </p>
+      <h2 className="text-primary-subtitle mb-12">La Masia Brugarolas</h2>
 
       <a
         href={mapsUrl}

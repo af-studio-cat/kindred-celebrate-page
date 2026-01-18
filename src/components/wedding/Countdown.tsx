@@ -56,7 +56,8 @@ const Countdown = () => {
           <div className="relative">
             <motion.span
               key={unit.value}
-              className="block font-serif text-3xl md:text-5xl lg:text-6xl text-primary tabular-nums"
+              className="block font-primary text-3xl md:text-5xl lg:text-6xl tabular-nums tracking-wide"
+              style={{ color: 'hsl(147 21% 31%)' }}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
@@ -64,7 +65,7 @@ const Countdown = () => {
               {String(unit.value).padStart(2, "0")}
             </motion.span>
           </div>
-          <span className="block font-sans text-xs md:text-sm text-muted-foreground tracking-widest uppercase mt-2">
+          <span className="block text-functional-caps mt-2">
             {unit.label}
           </span>
           
