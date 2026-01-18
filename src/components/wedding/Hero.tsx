@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Flourish from "./Flourish";
-
+import Countdown from "./Countdown";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20 botanical-pattern">
@@ -49,7 +49,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="inline-block border border-primary/30 px-8 py-4"
+          className="inline-block border border-primary/30 px-8 py-4 mb-12"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 1.3 }}
@@ -57,6 +57,15 @@ const Hero = () => {
           <p className="font-serif text-3xl md:text-4xl text-primary tracking-widest">
             20 · 06 · 2026
           </p>
+        </motion.div>
+
+        {/* Countdown Timer */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.5 }}
+        >
+          <Countdown />
         </motion.div>
 
         <Flourish className="mx-auto mt-12 rotate-180" />
