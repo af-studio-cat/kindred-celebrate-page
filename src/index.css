@@ -8,68 +8,69 @@
 
 @layer base {
   :root {
-    /* Ivory/Cream Background Palette */
-    --background: 40 33% 98%;
-    --foreground: 220 20% 20%;
+    /* Egg Yellow Background Palette */
+    --background: 45 60% 94%;
+    --foreground: 220 25% 18%;
 
     /* Card surfaces */
-    --card: 40 40% 97%;
-    --card-foreground: 220 20% 20%;
+    --card: 45 55% 92%;
+    --card-foreground: 220 25% 18%;
 
-    --popover: 40 40% 97%;
-    --popover-foreground: 220 20% 20%;
+    --popover: 45 55% 92%;
+    --popover-foreground: 220 25% 18%;
 
-    /* Elegant Blue - Primary */
-    --primary: 210 30% 42%;
-    --primary-foreground: 40 33% 98%;
+    /* Deep Blue - Primary (pencil sketch style) */
+    --primary: 215 50% 35%;
+    --primary-foreground: 45 60% 94%;
 
     /* Soft muted tones */
-    --secondary: 40 20% 94%;
-    --secondary-foreground: 220 20% 25%;
+    --secondary: 45 40% 90%;
+    --secondary-foreground: 220 25% 22%;
 
-    --muted: 40 15% 92%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 45 35% 88%;
+    --muted-foreground: 220 20% 40%;
 
-    --accent: 210 25% 88%;
-    --accent-foreground: 210 30% 35%;
+    --accent: 215 35% 85%;
+    --accent-foreground: 215 50% 30%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 40 33% 98%;
+    --destructive-foreground: 45 60% 94%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 90%;
-    --ring: 210 30% 42%;
+    --border: 45 30% 85%;
+    --input: 45 35% 88%;
+    --ring: 215 50% 35%;
 
     --radius: 0.25rem;
 
     /* Custom Wedding Colors */
-    --ivory: 40 33% 98%;
-    --cream: 40 40% 95%;
-    --elegant-blue: 210 30% 42%;
-    --elegant-blue-light: 210 25% 65%;
-    --elegant-blue-dark: 210 35% 30%;
-    --charcoal: 220 20% 20%;
-    --soft-gray: 220 15% 55%;
+    --ivory: 45 60% 94%;
+    --cream: 45 50% 90%;
+    --egg-yellow: 45 60% 94%;
+    --elegant-blue: 215 50% 35%;
+    --elegant-blue-light: 215 40% 55%;
+    --elegant-blue-dark: 215 55% 25%;
+    --charcoal: 220 25% 18%;
+    --soft-gray: 220 15% 50%;
 
     /* Envelope colors */
-    --envelope-back: 35 30% 92%;
-    --envelope-front: 38 35% 95%;
-    --envelope-flap: 40 25% 90%;
-    --envelope-shadow: 220 20% 70%;
+    --envelope-back: 42 45% 88%;
+    --envelope-front: 45 50% 91%;
+    --envelope-flap: 44 40% 86%;
+    --envelope-shadow: 220 20% 65%;
 
     /* Typography */
     --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Raleway', system-ui, sans-serif;
 
     /* Sidebar (keeping for compatibility) */
-    --sidebar-background: 40 33% 98%;
-    --sidebar-foreground: 220 20% 20%;
-    --sidebar-primary: 210 30% 42%;
-    --sidebar-primary-foreground: 40 33% 98%;
-    --sidebar-accent: 40 20% 94%;
-    --sidebar-accent-foreground: 220 20% 25%;
-    --sidebar-border: 40 20% 88%;
-    --sidebar-ring: 210 30% 42%;
+    --sidebar-background: 45 60% 94%;
+    --sidebar-foreground: 220 25% 18%;
+    --sidebar-primary: 215 50% 35%;
+    --sidebar-primary-foreground: 45 60% 94%;
+    --sidebar-accent: 45 40% 90%;
+    --sidebar-accent-foreground: 220 25% 22%;
+    --sidebar-border: 45 30% 85%;
+    --sidebar-ring: 215 50% 35%;
   }
 }
 
