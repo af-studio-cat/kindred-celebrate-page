@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['Raleway', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom wedding colors
+        ivory: "hsl(var(--ivory))",
+        cream: "hsl(var(--cream))",
+        "elegant-blue": {
+          DEFAULT: "hsl(var(--elegant-blue))",
+          light: "hsl(var(--elegant-blue-light))",
+          dark: "hsl(var(--elegant-blue-dark))",
+        },
+        charcoal: "hsl(var(--charcoal))",
+        "soft-gray": "hsl(var(--soft-gray))",
+        envelope: {
+          back: "hsl(var(--envelope-back))",
+          front: "hsl(var(--envelope-front))",
+          flap: "hsl(var(--envelope-flap))",
+          shadow: "hsl(var(--envelope-shadow))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,25 +85,27 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },
