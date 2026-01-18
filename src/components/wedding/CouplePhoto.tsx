@@ -1,10 +1,8 @@
 import Section from "./Section";
 import couplePhoto from "@/assets/couple-photo.jpg";
 import { WineGlasses, LeafSprig, CornerFloral } from "./Illustrations";
-
 const CouplePhoto = () => {
-  return (
-    <Section className="flex justify-center items-center py-12 md:py-20 relative overflow-hidden">
+  return <Section className="flex justify-center items-center py-12 md:py-20 relative overflow-hidden">
       {/* Decorative illustrations around photo */}
       <div className="absolute top-8 right-8 md:right-20 opacity-40">
         <WineGlasses className="w-24 md:w-32 h-20 md:h-24" />
@@ -19,15 +17,8 @@ const CouplePhoto = () => {
       </div>
 
       <div className="max-w-md md:max-w-lg lg:max-w-xl w-full relative z-10">
-        <img
-          src={couplePhoto}
-          alt="Paula i Adrià"
-          className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95]"
-          loading="lazy"
-        />
+        <img alt="Paula i Adrià" className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95]" loading="lazy" src="/lovable-uploads/b30e6791-a073-4105-ada4-9beac47edd7b.png" />
       </div>
-    </Section>
-  );
+    </Section>;
 };
-
 export default CouplePhoto;
