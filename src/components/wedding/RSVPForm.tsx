@@ -3,7 +3,7 @@ import Section from "./Section";
 import Flourish from "./Flourish";
 import { motion } from "framer-motion";
 import { z } from "zod";
-import { FloralHeart, LeafSprig } from "./Illustrations";
+import { FloralHeart, LeafSprig, OliveBranchBold, FlowerBranch } from "./Illustrations";
 
 const rsvpSchema = z.object({
   guestName: z.string().trim().min(1, "El nom és obligatori").max(100, "Màxim 100 caràcters"),
@@ -82,10 +82,13 @@ const RSVPForm = () => {
   return (
     <Section className="text-center bg-card/30 relative overflow-hidden">
       {/* Decorative illustrations */}
-      <div className="absolute top-12 left-4 md:left-12 opacity-25">
-        <LeafSprig className="w-10 md:w-14 h-14 md:h-20 -rotate-12" />
+      <div className="absolute top-12 left-4 md:left-12 opacity-30">
+        <OliveBranchBold className="w-20 md:w-28 h-12 md:h-16" />
       </div>
       <div className="absolute bottom-16 right-4 md:right-12 opacity-25">
+        <FlowerBranch className="w-8 md:w-12 h-24 md:h-32" />
+      </div>
+      <div className="absolute top-1/3 right-4 md:right-16 opacity-20">
         <LeafSprig className="w-10 md:w-14 h-14 md:h-20 rotate-12 -scale-x-100" />
       </div>
 

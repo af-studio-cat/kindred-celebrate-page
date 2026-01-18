@@ -2,7 +2,7 @@ import Section from "./Section";
 import Flourish from "./Flourish";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { WineBottle, Bird, LeafSprig } from "./Illustrations";
+import { WineBottle, Bird, LeafSprig, WineSet, StrawHat, Sun } from "./Illustrations";
 
 const scheduleItems = [
   { time: "17:45", event: "Citació" },
@@ -22,12 +22,15 @@ const Schedule = () => {
     <Section className="text-center relative overflow-hidden">
       {/* Decorative illustrations */}
       <div className="absolute top-20 right-4 md:right-20 opacity-35">
-        <WineBottle className="w-10 md:w-14 h-20 md:h-28" />
+        <WineSet className="w-16 md:w-24 h-16 md:h-24" />
       </div>
-      <div className="absolute top-16 left-4 md:left-16 opacity-25">
-        <Bird className="w-14 md:w-20 h-10 md:h-14" />
+      <div className="absolute top-16 left-4 md:left-16 opacity-30">
+        <StrawHat className="w-18 md:w-28 h-12 md:h-18" />
       </div>
-      <div className="absolute bottom-24 left-8 md:left-24 opacity-30">
+      <div className="absolute bottom-24 left-8 md:left-24 opacity-25">
+        <Sun className="w-12 md:w-16 h-12 md:h-16" />
+      </div>
+      <div className="absolute bottom-32 right-8 md:right-20 opacity-25">
         <LeafSprig className="w-10 md:w-14 h-14 md:h-20 rotate-12" />
       </div>
 
