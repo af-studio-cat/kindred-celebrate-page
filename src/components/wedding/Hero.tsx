@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Flourish from "./Flourish";
 import Countdown from "./Countdown";
-import { OliveBranch, Bird, FloralCluster } from "./Illustrations";
+import { OliveBranch, Bird, FloralCluster, Dove, WheatBouquet, FlowerBranch } from "./Illustrations";
 
 const Hero = () => {
   return (
@@ -17,12 +17,12 @@ const Hero = () => {
       </motion.div>
       
       <motion.div
-        className="absolute top-32 right-8 md:right-16 opacity-30"
+        className="absolute top-24 right-8 md:right-16 opacity-35"
         initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 0.3, x: 0 }}
+        animate={{ opacity: 0.35, x: 0 }}
         transition={{ duration: 1.5, delay: 2.2 }}
       >
-        <Bird className="w-16 md:w-24 h-12 md:h-16" />
+        <Dove className="w-20 md:w-28 h-16 md:h-22" />
       </motion.div>
 
       <motion.div
@@ -40,7 +40,16 @@ const Hero = () => {
         animate={{ opacity: 0.3, rotate: 0 }}
         transition={{ duration: 1.5, delay: 2.3 }}
       >
-        <FloralCluster className="w-16 md:w-24 h-16 md:h-24" />
+        <WheatBouquet className="w-16 md:w-24 h-20 md:h-32" />
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-32 right-8 md:right-24 opacity-25"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.25 }}
+        transition={{ duration: 1.5, delay: 2.6 }}
+      >
+        <FlowerBranch className="w-8 md:w-12 h-24 md:h-32" />
       </motion.div>
 
       <motion.div

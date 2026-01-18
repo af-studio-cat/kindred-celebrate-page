@@ -1,14 +1,17 @@
 import Section from "./Section";
-import { DancingFigures, FloralCluster } from "./Illustrations";
+import { DancingFigures, FloralCluster, StrawHat, WheatBouquet } from "./Illustrations";
 
 const DressCode = () => {
   return (
     <Section className="text-center bg-primary relative overflow-hidden">
       {/* Decorative illustrations - inverted colors */}
       <div className="absolute top-12 right-4 md:right-16 opacity-20">
-        <FloralCluster className="w-16 md:w-24 h-16 md:h-24 text-primary-foreground" />
+        <StrawHat className="w-20 md:w-28 h-14 md:h-18 text-primary-foreground" />
       </div>
       <div className="absolute bottom-16 left-4 md:left-16 opacity-20">
+        <WheatBouquet className="w-14 md:w-20 h-18 md:h-24 text-primary-foreground" />
+      </div>
+      <div className="absolute top-1/2 left-4 md:left-12 opacity-15">
         <FloralCluster className="w-14 md:w-20 h-14 md:h-20 text-primary-foreground" />
       </div>
 

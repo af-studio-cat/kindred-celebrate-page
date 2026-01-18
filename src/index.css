@@ -19,26 +19,26 @@
     --popover: 45 55% 92%;
     --popover-foreground: 220 25% 18%;
 
-    /* Deep Blue - Primary (pencil sketch style) */
-    --primary: 215 50% 35%;
+    /* Forest Green - Primary (muted, natural) */
+    --primary: 150 35% 30%;
     --primary-foreground: 45 60% 94%;
 
     /* Soft muted tones */
     --secondary: 45 40% 90%;
-    --secondary-foreground: 220 25% 22%;
+    --secondary-foreground: 150 30% 20%;
 
     --muted: 45 35% 88%;
-    --muted-foreground: 220 20% 40%;
+    --muted-foreground: 150 20% 35%;
 
-    --accent: 215 35% 85%;
-    --accent-foreground: 215 50% 30%;
+    --accent: 150 25% 85%;
+    --accent-foreground: 150 35% 25%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 45 60% 94%;
 
     --border: 45 30% 85%;
     --input: 45 35% 88%;
-    --ring: 215 50% 35%;
+    --ring: 150 35% 30%;
 
     --radius: 0.25rem;
 
@@ -46,9 +46,9 @@
     --ivory: 45 60% 94%;
     --cream: 45 50% 90%;
     --egg-yellow: 45 60% 94%;
-    --elegant-blue: 215 50% 35%;
-    --elegant-blue-light: 215 40% 55%;
-    --elegant-blue-dark: 215 55% 25%;
+    --forest-green: 150 35% 30%;
+    --forest-green-light: 150 30% 45%;
+    --forest-green-dark: 150 40% 22%;
     --charcoal: 220 25% 18%;
     --soft-gray: 220 15% 50%;
 
@@ -65,12 +65,12 @@
     /* Sidebar (keeping for compatibility) */
     --sidebar-background: 45 60% 94%;
     --sidebar-foreground: 220 25% 18%;
-    --sidebar-primary: 215 50% 35%;
+    --sidebar-primary: 150 35% 30%;
     --sidebar-primary-foreground: 45 60% 94%;
     --sidebar-accent: 45 40% 90%;
-    --sidebar-accent-foreground: 220 25% 22%;
+    --sidebar-accent-foreground: 150 30% 20%;
     --sidebar-border: 45 30% 85%;
-    --sidebar-ring: 215 50% 35%;
+    --sidebar-ring: 150 35% 30%;
   }
 }
 
@@ -179,6 +179,6 @@
 
 /* Delicate botanical pattern background */
 .botanical-pattern {
-  background-image: radial-gradient(circle at 20% 80%, hsl(var(--elegant-blue) / 0.03) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 20%, hsl(var(--elegant-blue) / 0.03) 0%, transparent 50%);
+  background-image: radial-gradient(circle at 20% 80%, hsl(var(--forest-green) / 0.03) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, hsl(var(--forest-green) / 0.03) 0%, transparent 50%);
 }
