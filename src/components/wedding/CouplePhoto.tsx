@@ -17,7 +17,7 @@ const CouplePhoto = () => {
       </div>
 
       <div className="max-w-md md:max-w-lg lg:max-w-xl w-full relative z-10">
-        <img alt="Paula i Adrià" className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95]" loading="lazy" src="/lovable-uploads/b30e6791-a073-4105-ada4-9beac47edd7b.png" />
+        <img alt="Paula i Adrià" className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95]" loading="lazy" src="/lovable-uploads/8fa6e483-aaad-4f95-a68e-dd822257b124.png" />
       </div>
     </Section>;
 };
