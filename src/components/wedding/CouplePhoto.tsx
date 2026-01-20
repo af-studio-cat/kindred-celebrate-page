@@ -1,16 +1,7 @@
 import Section from "./Section";
-import { 
-  WineGlasses, 
-  LeafSprig, 
-  CornerFloral, 
-  VintageCamera,
-  FloralCluster,
-  Daisy 
-} from "./Illustrations";
-
+import { WineGlasses, LeafSprig, CornerFloral, VintageCamera, FloralCluster, Daisy } from "./Illustrations";
 const CouplePhoto = () => {
-  return (
-    <Section className="flex justify-center items-center py-12 md:py-20 relative overflow-hidden">
+  return <Section className="flex justify-center items-center py-12 md:py-20 relative overflow-hidden">
       {/* Vintage camera - top left */}
       <div className="absolute top-8 left-4 md:left-12 opacity-20">
         <VintageCamera className="w-18 md:w-24 h-14 md:h-18" />
@@ -42,15 +33,8 @@ const CouplePhoto = () => {
       </div>
 
       <div className="max-w-md md:max-w-lg lg:max-w-xl w-full relative z-10">
-        <img
-          alt="Paula i Adrià"
-          className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95]"
-          loading="lazy"
-          src="/lovable-uploads/8fa6e483-aaad-4f95-a68e-dd822257b124.png"
-        />
+        <img alt="Paula i Adrià" className="w-full h-auto object-cover grayscale-[20%] contrast-[0.95] border-8 border-double" loading="lazy" src="/lovable-uploads/8fa6e483-aaad-4f95-a68e-dd822257b124.png" />
       </div>
-    </Section>
-  );
+    </Section>;
 };
-
 export default CouplePhoto;
