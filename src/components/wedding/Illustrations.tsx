@@ -761,3 +761,480 @@ export const OliveBranchBold = ({ className = "" }: IllustrationProps) => (
     <ellipse cx="88" cy="30" rx="4" ry="5" fill="currentColor" opacity="0.6" />
   </svg>
 );
+
+// NEW ILLUSTRATIONS - Mediterranean botanical and wedding themed
+
+// Large olive tree - for corners and edges
+export const OliveTree = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 150 200"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Trunk - twisted organic shape */}
+    <path
+      d="M70 200 Q65 180 68 160 Q72 140 65 120 Q58 100 70 85 Q68 75 75 65"
+      stroke="currentColor"
+      strokeWidth="4"
+      fill="none"
+    />
+    <path
+      d="M80 200 Q85 180 82 160 Q78 140 85 120 Q92 100 80 85 Q82 75 75 65"
+      stroke="currentColor"
+      strokeWidth="3"
+      fill="none"
+    />
+    {/* Foliage clusters */}
+    <ellipse cx="75" cy="50" rx="35" ry="25" fill="currentColor" opacity="0.3" />
+    <ellipse cx="45" cy="65" rx="28" ry="20" fill="currentColor" opacity="0.25" />
+    <ellipse cx="105" cy="60" rx="30" ry="22" fill="currentColor" opacity="0.25" />
+    <ellipse cx="60" cy="35" rx="25" ry="18" fill="currentColor" opacity="0.2" />
+    <ellipse cx="95" cy="38" rx="22" ry="16" fill="currentColor" opacity="0.2" />
+    <ellipse cx="75" cy="25" rx="20" ry="12" fill="currentColor" opacity="0.15" />
+    {/* Olive details */}
+    <circle cx="55" cy="55" r="3" fill="currentColor" opacity="0.5" />
+    <circle cx="90" cy="48" r="3" fill="currentColor" opacity="0.5" />
+    <circle cx="70" cy="40" r="2.5" fill="currentColor" opacity="0.5" />
+    <circle cx="42" cy="70" r="2.5" fill="currentColor" opacity="0.5" />
+    <circle cx="108" cy="55" r="2.5" fill="currentColor" opacity="0.5" />
+  </svg>
+);
+
+// Mediterranean pine tree silhouette
+export const PineTree = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 100 180"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Trunk */}
+    <path
+      d="M48 180 L48 120 Q47 100 50 80"
+      stroke="currentColor"
+      strokeWidth="4"
+      fill="none"
+    />
+    <path
+      d="M52 180 L52 120 Q53 100 50 80"
+      stroke="currentColor"
+      strokeWidth="3"
+      fill="none"
+    />
+    {/* Crown - umbrella shape typical of Mediterranean pines */}
+    <path
+      d="M10 75 Q20 60 35 55 Q50 35 65 55 Q80 60 90 75 Q75 78 50 78 Q25 78 10 75"
+      fill="currentColor"
+      opacity="0.4"
+    />
+    <path
+      d="M15 68 Q30 50 50 45 Q70 50 85 68 Q65 72 50 72 Q35 72 15 68"
+      fill="currentColor"
+      opacity="0.3"
+    />
+    <path
+      d="M25 58 Q40 40 50 38 Q60 40 75 58 Q60 62 50 62 Q40 62 25 58"
+      fill="currentColor"
+      opacity="0.25"
+    />
+  </svg>
+);
+
+// Lavender bush
+export const LavenderBush = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Stems */}
+    <path d="M20 95 Q22 70 18 45" stroke="currentColor" strokeWidth="1" />
+    <path d="M30 95 Q28 65 32 35" stroke="currentColor" strokeWidth="1" />
+    <path d="M40 95 Q40 60 40 30" stroke="currentColor" strokeWidth="1" />
+    <path d="M50 95 Q52 65 48 35" stroke="currentColor" strokeWidth="1" />
+    <path d="M60 95 Q58 70 62 45" stroke="currentColor" strokeWidth="1" />
+    {/* Flower heads */}
+    <ellipse cx="18" cy="35" rx="4" ry="12" fill="currentColor" opacity="0.4" />
+    <ellipse cx="32" cy="25" rx="4" ry="14" fill="currentColor" opacity="0.4" />
+    <ellipse cx="40" cy="20" rx="5" ry="15" fill="currentColor" opacity="0.5" />
+    <ellipse cx="48" cy="25" rx="4" ry="14" fill="currentColor" opacity="0.4" />
+    <ellipse cx="62" cy="35" rx="4" ry="12" fill="currentColor" opacity="0.4" />
+    {/* Flower details */}
+    <circle cx="18" cy="28" r="1.5" fill="currentColor" opacity="0.6" />
+    <circle cx="32" cy="18" r="1.5" fill="currentColor" opacity="0.6" />
+    <circle cx="40" cy="12" r="2" fill="currentColor" opacity="0.7" />
+    <circle cx="48" cy="18" r="1.5" fill="currentColor" opacity="0.6" />
+    <circle cx="62" cy="28" r="1.5" fill="currentColor" opacity="0.6" />
+  </svg>
+);
+
+// Single daisy flower
+export const Daisy = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 60 80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Stem */}
+    <path d="M30 80 Q28 60 30 40" stroke="currentColor" strokeWidth="1.2" />
+    {/* Leaves */}
+    <path d="M30 65 Q20 62 18 55 Q22 58 30 60" fill="currentColor" opacity="0.25" />
+    <path d="M30 55 Q40 52 42 45 Q38 48 30 50" fill="currentColor" opacity="0.25" />
+    {/* Petals */}
+    <ellipse cx="30" cy="25" rx="4" ry="12" fill="currentColor" opacity="0.3" />
+    <ellipse cx="30" cy="35" rx="4" ry="12" fill="currentColor" opacity="0.3" transform="rotate(180 30 30)" />
+    <ellipse cx="18" cy="30" rx="4" ry="12" fill="currentColor" opacity="0.3" transform="rotate(90 30 30)" />
+    <ellipse cx="42" cy="30" rx="4" ry="12" fill="currentColor" opacity="0.3" transform="rotate(-90 30 30)" />
+    <ellipse cx="22" cy="22" rx="3" ry="10" fill="currentColor" opacity="0.25" transform="rotate(45 30 30)" />
+    <ellipse cx="38" cy="22" rx="3" ry="10" fill="currentColor" opacity="0.25" transform="rotate(-45 30 30)" />
+    <ellipse cx="22" cy="38" rx="3" ry="10" fill="currentColor" opacity="0.25" transform="rotate(-45 30 30)" />
+    <ellipse cx="38" cy="38" rx="3" ry="10" fill="currentColor" opacity="0.25" transform="rotate(45 30 30)" />
+    {/* Center */}
+    <circle cx="30" cy="30" r="6" fill="currentColor" opacity="0.5" />
+  </svg>
+);
+
+// Rose stem with detailed flower
+export const RoseStem = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 50 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Stem with thorns */}
+    <path d="M25 100 Q23 80 25 60 Q27 40 25 25" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M25 85 L22 82" stroke="currentColor" strokeWidth="1" />
+    <path d="M25 70 L28 67" stroke="currentColor" strokeWidth="1" />
+    <path d="M25 55 L22 52" stroke="currentColor" strokeWidth="1" />
+    {/* Leaves */}
+    <path d="M25 75 Q15 72 12 65 Q18 68 25 72" fill="currentColor" opacity="0.3" />
+    <path d="M25 60 Q35 57 38 50 Q32 53 25 57" fill="currentColor" opacity="0.3" />
+    {/* Rose petals - layered */}
+    <path d="M25 25 Q15 22 12 15 Q18 20 25 22" fill="currentColor" opacity="0.35" />
+    <path d="M25 25 Q35 22 38 15 Q32 20 25 22" fill="currentColor" opacity="0.35" />
+    <path d="M25 20 Q20 10 25 5 Q30 10 25 20" fill="currentColor" opacity="0.4" />
+    <ellipse cx="25" cy="18" rx="8" ry="10" fill="currentColor" opacity="0.3" />
+    <ellipse cx="25" cy="15" rx="5" ry="7" fill="currentColor" opacity="0.4" />
+    <circle cx="25" cy="13" r="3" fill="currentColor" opacity="0.5" />
+  </svg>
+);
+
+// Wildflower bouquet
+export const WildflowerBouquet = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 100 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Multiple stems */}
+    <path d="M50 120 Q45 100 35 70 Q30 50 25 30" stroke="currentColor" strokeWidth="1" />
+    <path d="M50 120 Q50 95 50 65 Q50 40 50 20" stroke="currentColor" strokeWidth="1" />
+    <path d="M50 120 Q55 100 65 70 Q70 50 75 30" stroke="currentColor" strokeWidth="1" />
+    <path d="M50 120 Q40 105 30 85 Q25 70 15 50" stroke="currentColor" strokeWidth="0.8" />
+    <path d="M50 120 Q60 105 70 85 Q75 70 85 50" stroke="currentColor" strokeWidth="0.8" />
+    {/* Various flower heads */}
+    <circle cx="25" cy="25" r="6" fill="currentColor" opacity="0.35" />
+    <circle cx="25" cy="25" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="50" cy="15" r="7" fill="currentColor" opacity="0.4" />
+    <circle cx="50" cy="15" r="2.5" fill="currentColor" opacity="0.6" />
+    <circle cx="75" cy="25" r="6" fill="currentColor" opacity="0.35" />
+    <circle cx="75" cy="25" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="15" cy="45" r="5" fill="currentColor" opacity="0.3" />
+    <circle cx="15" cy="45" r="1.5" fill="currentColor" opacity="0.5" />
+    <circle cx="85" cy="45" r="5" fill="currentColor" opacity="0.3" />
+    <circle cx="85" cy="45" r="1.5" fill="currentColor" opacity="0.5" />
+    {/* Small filler flowers */}
+    <circle cx="35" cy="40" r="3" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    <circle cx="65" cy="38" r="3" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    <circle cx="45" cy="30" r="2.5" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    <circle cx="55" cy="32" r="2.5" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    {/* Ribbon */}
+    <path d="M42 95 Q35 92 32 95 Q35 98 42 95" fill="currentColor" opacity="0.4" />
+    <path d="M58 95 Q65 92 68 95 Q65 98 58 95" fill="currentColor" opacity="0.4" />
+    <ellipse cx="50" cy="95" rx="10" ry="4" stroke="currentColor" strokeWidth="1.5" fill="currentColor" opacity="0.2" />
+  </svg>
+);
+
+// Potted tree
+export const PottedTree = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Pot */}
+    <path
+      d="M25 100 L20 75 L60 75 L55 100 Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      fill="currentColor"
+      opacity="0.2"
+    />
+    <path d="M18 75 L62 75" stroke="currentColor" strokeWidth="2" />
+    {/* Trunk */}
+    <path d="M40 75 Q38 65 40 55 Q42 45 40 35" stroke="currentColor" strokeWidth="2" />
+    {/* Foliage - round topiary shape */}
+    <circle cx="40" cy="25" r="20" fill="currentColor" opacity="0.35" />
+    <circle cx="40" cy="22" r="15" fill="currentColor" opacity="0.25" />
+    <circle cx="40" cy="20" r="10" fill="currentColor" opacity="0.15" />
+    {/* Small details */}
+    <circle cx="32" cy="28" r="2" fill="currentColor" opacity="0.4" />
+    <circle cx="48" cy="25" r="2" fill="currentColor" opacity="0.4" />
+    <circle cx="40" cy="18" r="1.5" fill="currentColor" opacity="0.4" />
+  </svg>
+);
+
+// Vintage camera
+export const VintageCamera = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 100 80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Camera body */}
+    <rect x="15" y="25" width="70" height="45" rx="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" opacity="0.15" />
+    {/* Viewfinder */}
+    <rect x="40" y="15" width="20" height="12" rx="1" stroke="currentColor" strokeWidth="1.2" fill="currentColor" opacity="0.2" />
+    {/* Lens */}
+    <circle cx="50" cy="48" r="18" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <circle cx="50" cy="48" r="12" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.2" />
+    <circle cx="50" cy="48" r="6" fill="currentColor" opacity="0.4" />
+    {/* Flash */}
+    <rect x="70" y="28" width="12" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.3" />
+    {/* Button */}
+    <circle cx="78" cy="20" r="4" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.3" />
+    {/* Strap holes */}
+    <circle cx="20" cy="35" r="2" fill="currentColor" opacity="0.5" />
+    <circle cx="80" cy="35" r="2" fill="currentColor" opacity="0.5" />
+  </svg>
+);
+
+// Wedding cake
+export const WeddingCake = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Base plate */}
+    <ellipse cx="40" cy="95" rx="38" ry="4" stroke="currentColor" strokeWidth="1.2" fill="currentColor" opacity="0.15" />
+    {/* Bottom tier */}
+    <rect x="10" y="70" width="60" height="25" rx="2" stroke="currentColor" strokeWidth="1.2" fill="currentColor" opacity="0.2" />
+    <path d="M10 80 Q40 75 70 80" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+    {/* Middle tier */}
+    <rect x="18" y="45" width="44" height="25" rx="2" stroke="currentColor" strokeWidth="1.2" fill="currentColor" opacity="0.2" />
+    <path d="M18 55 Q40 50 62 55" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+    {/* Top tier */}
+    <rect x="26" y="25" width="28" height="20" rx="2" stroke="currentColor" strokeWidth="1.2" fill="currentColor" opacity="0.2" />
+    <path d="M26 33 Q40 28 54 33" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+    {/* Topper - flowers */}
+    <circle cx="40" cy="18" r="5" fill="currentColor" opacity="0.35" />
+    <circle cx="35" cy="22" r="3" fill="currentColor" opacity="0.3" />
+    <circle cx="45" cy="22" r="3" fill="currentColor" opacity="0.3" />
+    {/* Decorative flowers on tiers */}
+    <circle cx="25" cy="78" r="2" fill="currentColor" opacity="0.4" />
+    <circle cx="55" cy="78" r="2" fill="currentColor" opacity="0.4" />
+    <circle cx="30" cy="53" r="1.5" fill="currentColor" opacity="0.4" />
+    <circle cx="50" cy="53" r="1.5" fill="currentColor" opacity="0.4" />
+  </svg>
+);
+
+// Wedding rings
+export const WeddingRings = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 60"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Left ring */}
+    <ellipse cx="28" cy="30" rx="18" ry="20" stroke="currentColor" strokeWidth="3" fill="none" />
+    <ellipse cx="28" cy="30" rx="14" ry="16" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.3" />
+    {/* Right ring */}
+    <ellipse cx="52" cy="30" rx="18" ry="20" stroke="currentColor" strokeWidth="3" fill="none" />
+    <ellipse cx="52" cy="30" rx="14" ry="16" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.3" />
+    {/* Diamond on right ring */}
+    <path d="M52 15 L48 20 L52 12 L56 20 L52 15" fill="currentColor" opacity="0.5" />
+    <circle cx="52" cy="16" r="2" fill="currentColor" opacity="0.4" />
+  </svg>
+);
+
+// Vintage bicycle with flower basket
+export const VintageBicycle = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 120 80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Back wheel */}
+    <circle cx="25" cy="55" r="18" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <circle cx="25" cy="55" r="3" fill="currentColor" opacity="0.4" />
+    {/* Front wheel */}
+    <circle cx="95" cy="55" r="18" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <circle cx="95" cy="55" r="3" fill="currentColor" opacity="0.4" />
+    {/* Frame */}
+    <path d="M25 55 L55 30 L85 35 L95 55" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <path d="M55 30 L55 55 L25 55" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <path d="M85 35 L95 55" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    {/* Handlebars */}
+    <path d="M85 35 L88 25 Q90 22 95 25 Q100 28 98 32" stroke="currentColor" strokeWidth="1.2" fill="none" />
+    {/* Seat */}
+    <ellipse cx="55" cy="27" rx="6" ry="3" fill="currentColor" opacity="0.3" />
+    {/* Basket */}
+    <path d="M100 30 L105 25 L115 25 L118 35 L100 35 Z" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.15" />
+    {/* Flowers in basket */}
+    <circle cx="108" cy="22" r="4" fill="currentColor" opacity="0.35" />
+    <circle cx="113" cy="23" r="3" fill="currentColor" opacity="0.3" />
+    <circle cx="105" cy="24" r="3" fill="currentColor" opacity="0.3" />
+  </svg>
+);
+
+// Two birds on a branch
+export const BirdsOnBranch = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 100 70"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Branch */}
+    <path
+      d="M5 55 Q30 50 50 52 Q70 54 95 48"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+    />
+    {/* Small twigs */}
+    <path d="M20 52 Q15 45 10 42" stroke="currentColor" strokeWidth="1" />
+    <path d="M75 50 Q80 42 85 40" stroke="currentColor" strokeWidth="1" />
+    {/* Left bird */}
+    <path
+      d="M30 50 Q25 48 22 42 Q20 35 28 35 Q35 35 38 42 Q40 48 35 50 Q32 52 30 50"
+      fill="currentColor"
+      opacity="0.5"
+    />
+    <circle cx="27" cy="40" r="1.5" fill="currentColor" opacity="0.8" />
+    <path d="M22 40 L18 38" stroke="currentColor" strokeWidth="1" />
+    <path d="M38 42 Q45 38 48 35" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.3" />
+    {/* Right bird - facing left */}
+    <path
+      d="M70 48 Q75 46 78 40 Q80 33 72 33 Q65 33 62 40 Q60 46 65 48 Q68 50 70 48"
+      fill="currentColor"
+      opacity="0.5"
+    />
+    <circle cx="73" cy="38" r="1.5" fill="currentColor" opacity="0.8" />
+    <path d="M78 38 L82 36" stroke="currentColor" strokeWidth="1" />
+    <path d="M62 40 Q55 36 52 33" stroke="currentColor" strokeWidth="1" fill="currentColor" opacity="0.3" />
+    {/* Leaves on branch */}
+    <ellipse cx="45" cy="48" rx="6" ry="3" fill="currentColor" opacity="0.25" transform="rotate(-10 45 48)" />
+    <ellipse cx="60" cy="50" rx="5" ry="2.5" fill="currentColor" opacity="0.25" transform="rotate(15 60 50)" />
+  </svg>
+);
+
+// Music notes - decorative
+export const MusicNotes = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* First note */}
+    <ellipse cx="20" cy="60" rx="8" ry="6" fill="currentColor" opacity="0.5" transform="rotate(-20 20 60)" />
+    <path d="M27 57 L27 20" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M27 20 Q35 22 35 30 Q35 38 27 35" fill="currentColor" opacity="0.3" />
+    {/* Second note */}
+    <ellipse cx="55" cy="55" rx="8" ry="6" fill="currentColor" opacity="0.5" transform="rotate(-20 55 55)" />
+    <path d="M62 52 L62 15" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M62 15 Q70 17 70 25 Q70 33 62 30" fill="currentColor" opacity="0.3" />
+    {/* Connecting beam */}
+    <path d="M27 22 Q45 18 62 17" stroke="currentColor" strokeWidth="2.5" />
+    {/* Small decorative notes */}
+    <circle cx="40" cy="40" r="3" fill="currentColor" opacity="0.3" />
+    <path d="M43 38 L43 28" stroke="currentColor" strokeWidth="1" />
+  </svg>
+);
+
+// Large olive branch for edges
+export const OliveBranchLarge = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 200 80"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Main branch */}
+    <path
+      d="M0 50 Q40 40 80 45 Q120 50 160 42 Q180 38 200 40"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+    />
+    {/* Leaves - alternating sides */}
+    <ellipse cx="25" cy="38" rx="12" ry="6" fill="currentColor" opacity="0.35" transform="rotate(-25 25 38)" />
+    <ellipse cx="45" cy="52" rx="14" ry="7" fill="currentColor" opacity="0.35" transform="rotate(20 45 52)" />
+    <ellipse cx="70" cy="38" rx="12" ry="6" fill="currentColor" opacity="0.35" transform="rotate(-30 70 38)" />
+    <ellipse cx="95" cy="55" rx="14" ry="7" fill="currentColor" opacity="0.35" transform="rotate(25 95 55)" />
+    <ellipse cx="120" cy="40" rx="12" ry="6" fill="currentColor" opacity="0.35" transform="rotate(-20 120 40)" />
+    <ellipse cx="145" cy="50" rx="13" ry="6" fill="currentColor" opacity="0.35" transform="rotate(18 145 50)" />
+    <ellipse cx="170" cy="35" rx="11" ry="5" fill="currentColor" opacity="0.35" transform="rotate(-22 170 35)" />
+    <ellipse cx="190" cy="45" rx="10" ry="5" fill="currentColor" opacity="0.35" transform="rotate(15 190 45)" />
+    {/* Olives */}
+    <ellipse cx="35" cy="45" rx="5" ry="6" fill="currentColor" opacity="0.5" />
+    <ellipse cx="82" cy="48" rx="5" ry="6" fill="currentColor" opacity="0.5" />
+    <ellipse cx="130" cy="47" rx="5" ry="6" fill="currentColor" opacity="0.5" />
+    <ellipse cx="175" cy="42" rx="4" ry="5" fill="currentColor" opacity="0.5" />
+  </svg>
+);
+
+// Grape vine
+export const GrapeVine = ({ className = "" }: IllustrationProps) => (
+  <svg
+    className={`text-primary ${className}`}
+    viewBox="0 0 80 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Vine */}
+    <path
+      d="M40 5 Q35 20 40 35 Q45 50 38 65 Q32 80 40 95"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      fill="none"
+    />
+    {/* Tendrils */}
+    <path d="M40 15 Q50 12 55 18 Q52 22 45 20" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    <path d="M38 45 Q28 42 23 48 Q26 52 33 50" stroke="currentColor" strokeWidth="0.8" fill="none" />
+    {/* Leaves */}
+    <path
+      d="M55 25 Q60 20 65 25 Q70 30 65 38 Q58 42 52 38 Q48 32 55 25"
+      stroke="currentColor"
+      strokeWidth="1"
+      fill="currentColor"
+      opacity="0.25"
+    />
+    <path
+      d="M22 55 Q17 50 12 55 Q7 60 12 68 Q18 72 25 68 Q30 62 22 55"
+      stroke="currentColor"
+      strokeWidth="1"
+      fill="currentColor"
+      opacity="0.25"
+    />
+    {/* Grape cluster */}
+    <circle cx="50" cy="50" r="5" fill="currentColor" opacity="0.4" />
+    <circle cx="58" cy="55" r="5" fill="currentColor" opacity="0.4" />
+    <circle cx="54" cy="62" r="5" fill="currentColor" opacity="0.4" />
+    <circle cx="46" cy="58" r="4" fill="currentColor" opacity="0.35" />
+    <circle cx="60" cy="64" r="4" fill="currentColor" opacity="0.35" />
+    <circle cx="52" cy="70" r="4" fill="currentColor" opacity="0.35" />
+  </svg>
+);

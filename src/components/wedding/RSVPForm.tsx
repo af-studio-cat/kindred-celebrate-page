@@ -3,7 +3,15 @@ import Section from "./Section";
 import Flourish from "./Flourish";
 import { motion } from "framer-motion";
 import { z } from "zod";
-import { FloralHeart, LeafSprig, OliveBranchBold, FlowerBranch } from "./Illustrations";
+import { 
+  FloralHeart, 
+  LeafSprig, 
+  OliveBranchBold, 
+  FlowerBranch,
+  BirdsOnBranch,
+  WeddingRings,
+  RoseStem
+} from "./Illustrations";
 
 const rsvpSchema = z.object({
   guestName: z.string().trim().min(1, "El nom és obligatori").max(100, "Màxim 100 caràcters"),
@@ -56,8 +64,13 @@ const RSVPForm = () => {
   if (submitted) {
     return (
       <Section className="text-center bg-card/30 relative overflow-hidden">
-        <div className="absolute top-8 right-8 md:right-16 opacity-25">
-          <LeafSprig className="w-12 md:w-16 h-16 md:h-24" />
+        {/* Birds on branch - celebration */}
+        <div className="absolute top-12 left-1/4 opacity-25 hidden md:block">
+          <BirdsOnBranch className="w-24 h-18" />
+        </div>
+
+        <div className="absolute top-8 right-8 md:right-16 opacity-20">
+          <LeafSprig className="w-10 md:w-14 h-14 md:h-20" />
         </div>
         
         <Flourish className="mx-auto mb-10" />
@@ -81,15 +94,29 @@ const RSVPForm = () => {
 
   return (
     <Section className="text-center bg-card/30 relative overflow-hidden">
-      {/* Decorative illustrations */}
-      <div className="absolute top-12 left-4 md:left-12 opacity-30">
-        <OliveBranchBold className="w-20 md:w-28 h-12 md:h-16" />
+      {/* Olive branch - top left */}
+      <div className="absolute top-12 left-4 md:left-12 opacity-25">
+        <OliveBranchBold className="w-18 md:w-24 h-10 md:h-14" />
       </div>
-      <div className="absolute bottom-16 right-4 md:right-12 opacity-25">
-        <FlowerBranch className="w-8 md:w-12 h-24 md:h-32" />
+
+      {/* Wedding rings - top right, symbolic */}
+      <div className="absolute top-16 right-4 md:right-16 opacity-20">
+        <WeddingRings className="w-14 md:w-18 h-10 md:h-14" />
       </div>
-      <div className="absolute top-1/3 right-4 md:right-16 opacity-20">
-        <LeafSprig className="w-10 md:w-14 h-14 md:h-20 rotate-12 -scale-x-100" />
+
+      {/* Rose stem - left middle */}
+      <div className="absolute top-1/3 left-4 md:left-8 opacity-20 hidden md:block">
+        <RoseStem className="w-10 h-20" />
+      </div>
+
+      {/* Flower branch - right side */}
+      <div className="absolute bottom-24 right-4 md:right-12 opacity-20">
+        <FlowerBranch className="w-8 md:w-10 h-20 md:h-28" />
+      </div>
+
+      {/* Leaf sprig - bottom left */}
+      <div className="absolute bottom-16 left-8 md:left-16 opacity-20">
+        <LeafSprig className="w-10 md:w-12 h-14 md:h-18 -rotate-12 -scale-x-100" />
       </div>
 
       <Flourish className="mx-auto mb-12" />

@@ -9,12 +9,16 @@ import Schedule from "@/components/wedding/Schedule";
 import ImportantInfo from "@/components/wedding/ImportantInfo";
 import RSVPForm from "@/components/wedding/RSVPForm";
 import Footer from "@/components/wedding/Footer";
+import PaperTexture from "@/components/wedding/PaperTexture";
 
 const Index = () => {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
 
   return (
     <>
+      {/* Subtle paper grain texture overlay */}
+      <PaperTexture />
+
       <AnimatePresence>
         {!isEnvelopeOpen && (
           <Envelope onOpen={() => setIsEnvelopeOpen(true)} />
@@ -22,7 +26,7 @@ const Index = () => {
       </AnimatePresence>
 
       {isEnvelopeOpen && (
-        <main className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background relative z-10">
           <Hero />
           <CouplePhoto />
           <Celebration />
