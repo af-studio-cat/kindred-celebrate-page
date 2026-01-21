@@ -122,7 +122,7 @@ const Hero = () => {
     }}>
         <Flourish className="mx-auto mb-10" />
         
-        <motion.p className="text-script-small mb-8" initial={{
+        <motion.p className="text-functional-caps mb-10 tracking-[0.25em]" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
@@ -130,10 +130,10 @@ const Hero = () => {
         duration: 0.8,
         delay: 0.5
       }}>
-          Us convidem al nostre casament
+          Reserva la data
         </motion.p>
 
-        <motion.h1 className="text-primary-title mb-6 font-serif" initial={{
+        <motion.h1 className="text-primary-title mb-4" initial={{
         opacity: 0,
         y: 20
       }} animate={{
@@ -146,7 +146,7 @@ const Hero = () => {
           Paula i Adrià
         </motion.h1>
 
-        <motion.p className="text-script mb-12" initial={{
+        <motion.p className="text-script text-3xl md:text-4xl mb-16" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
@@ -157,7 +157,7 @@ const Hero = () => {
           Ens casem!
         </motion.p>
 
-        <motion.div className="inline-block border-primary/30 px-10 py-5 mb-14 border-0" initial={{
+        <motion.div className="mb-16" initial={{
         opacity: 0,
         scale: 0.95
       }} animate={{

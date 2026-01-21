@@ -40,13 +40,13 @@ const ExtrasSection = () => {
       </div>
 
       {/* Three columns grid */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 relative z-10">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 relative z-10">
         
         {/* Dress Code */}
-        <div className="text-center">
-          <h3 className="text-primary-section mb-8">Dress Code</h3>
+        <div className="text-center flex flex-col items-center">
+          <h3 className="text-primary-section mb-6">Dress Code</h3>
           
-          <p className="text-script leading-loose mb-6 text-base">
+          <p className="text-script leading-loose mb-8 text-lg md:text-xl max-w-xs">
             "Ells de traje elegant estaran,
             <br />
             elles de vestit llarg aniran
@@ -54,14 +54,23 @@ const ExtrasSection = () => {
             i junts puntualment arribaran."
           </p>
 
-          <DancingFigures className="mx-auto w-20 h-16 opacity-40" />
+          <a 
+            href="https://pin.it/example" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-elegant inline-flex items-center gap-2 mb-6"
+          >
+            Inspiració
+          </a>
+
+          <DancingFigures className="mx-auto w-16 h-12 opacity-30" />
         </div>
 
         {/* Photo Album */}
-        <div className="text-center">
-          <h3 className="text-primary-section mb-8">Àlbum de Fotos</h3>
+        <div className="text-center flex flex-col items-center">
+          <h3 className="text-primary-section mb-6">Àlbum de Fotos</h3>
           
-          <p className="text-script-small mb-8 text-base">
+          <p className="text-script-small mb-8 text-lg md:text-xl max-w-xs">
             Puja i comparteix el registre de fotos i vídeos del dia
           </p>
 
@@ -70,14 +79,14 @@ const ExtrasSection = () => {
             Compartir
           </button>
 
-          <VintageCamera className="mx-auto mt-6 w-14 h-10 opacity-25 hidden md:block" />
+          <VintageCamera className="mx-auto mt-6 w-12 h-8 opacity-20 hidden md:block" />
         </div>
 
         {/* Playlist */}
-        <div className="text-center">
-          <h3 className="text-primary-section mb-8">Playlist</h3>
+        <div className="text-center flex flex-col items-center">
+          <h3 className="text-primary-section mb-6">Playlist</h3>
           
-          <p className="text-script-small mb-8 text-base">
+          <p className="text-script-small mb-8 text-lg md:text-xl max-w-xs">
             Afegeix les cançons que no poden faltar a la festa
           </p>
 
