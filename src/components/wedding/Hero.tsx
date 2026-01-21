@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import Flourish from "./Flourish";
 import Countdown from "./Countdown";
 import { OliveBranch, Bird, FloralCluster, Dove, WheatBouquet, FlowerBranch, OliveTree, LavenderBush, Daisy } from "./Illustrations";
+import logoImage from "@/assets/logo-paula-adria.png";
+
 const Hero = () => {
   return <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20 botanical-pattern relative overflow-hidden">
       {/* Large olive tree - cropped at left edge */}
@@ -133,18 +135,23 @@ const Hero = () => {
           Ens casem!
         </motion.p>
 
-        <motion.h1 className="text-primary-title mb-12" initial={{
-        opacity: 0,
-        y: 20
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.8,
-        delay: 0.7
-      }}>
-          Paula i Adrià
-        </motion.h1>
+        <motion.img 
+          src={logoImage} 
+          alt="Paula i Adrià" 
+          className="w-72 md:w-96 lg:w-[28rem] h-auto mb-12"
+          initial={{
+            opacity: 0,
+            y: 20
+          }} 
+          animate={{
+            opacity: 1,
+            y: 0
+          }} 
+          transition={{
+            duration: 0.8,
+            delay: 0.7
+          }}
+        />
 
         <motion.div className="mb-6" initial={{
         opacity: 0,
