@@ -122,7 +122,7 @@ const Hero = () => {
     }}>
         <Flourish className="mx-auto mb-10" />
         
-        <motion.p className="text-functional-caps mb-10 tracking-[0.25em]" initial={{
+        <motion.p className="text-script text-3xl md:text-4xl mb-6" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
@@ -130,10 +130,10 @@ const Hero = () => {
         duration: 0.8,
         delay: 0.5
       }}>
-          Reserva la data
+          Ens casem!
         </motion.p>
 
-        <motion.h1 className="text-primary-title mb-4" initial={{
+        <motion.h1 className="text-primary-title mb-12" initial={{
         opacity: 0,
         y: 20
       }} animate={{
@@ -146,18 +146,7 @@ const Hero = () => {
           Paula i Adrià
         </motion.h1>
 
-        <motion.p className="text-script text-3xl md:text-4xl mb-16" initial={{
-        opacity: 0
-      }} animate={{
-        opacity: 1
-      }} transition={{
-        duration: 0.8,
-        delay: 0.9
-      }}>
-          Ens casem!
-        </motion.p>
-
-        <motion.div className="mb-16" initial={{
+        <motion.div className="mb-6" initial={{
         opacity: 0,
         scale: 0.95
       }} animate={{
@@ -165,12 +154,23 @@ const Hero = () => {
         scale: 1
       }} transition={{
         duration: 0.8,
-        delay: 1.1
+        delay: 0.9
       }}>
           <p className="text-primary-subtitle tracking-[0.2em]">
             20 · 06 · 2026
           </p>
         </motion.div>
+
+        <motion.p className="text-functional-caps mb-16 tracking-[0.25em]" initial={{
+        opacity: 0
+      }} animate={{
+        opacity: 1
+      }} transition={{
+        duration: 0.8,
+        delay: 1.1
+      }}>
+          Reserva la data
+        </motion.p>
 
         {/* Countdown Timer */}
         <motion.div initial={{
