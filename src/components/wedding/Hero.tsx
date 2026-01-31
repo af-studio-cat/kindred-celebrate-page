@@ -123,7 +123,7 @@ const Hero = () => {
     }}>
         <Flourish className="mx-auto mb-10" />
         
-        <motion.p className="text-script text-3xl md:text-4xl mb-6" initial={{
+        <motion.p className="text-script md:text-4xl mb-6 text-2xl" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
@@ -131,7 +131,7 @@ const Hero = () => {
         duration: 0.8,
         delay: 0.5
       }}>
-          Ens casem!
+          Ens fa molta il·usió convidar-te al nostre casament          
         </motion.p>
 
         <motion.img alt="Paula i Adrià" className="w-[22rem] md:w-[30rem] lg:w-[38rem] h-auto mb-14" initial={{
