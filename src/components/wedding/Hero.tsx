@@ -143,7 +143,7 @@ const Hero = () => {
       }} transition={{
         duration: 0.8,
         delay: 0.7
-      }} src="/lovable-uploads/b15413c3-fd0a-41fe-a2bc-2e7de4a407dc.png" />
+      }} src="/lovable-uploads/400101d0-4829-403b-9916-0fcdfeae24b1.png" />
 
         <motion.div className="mb-6" initial={{
         opacity: 0,
