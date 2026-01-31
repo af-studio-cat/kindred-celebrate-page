@@ -123,7 +123,7 @@ const Hero = () => {
     }}>
         <Flourish className="mx-auto mb-10" />
         
-        <motion.p className="text-script md:text-4xl mb-6 text-2xl" initial={{
+        <motion.p className="text-script md:text-4xl mb-6 text-2xl font-serif" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
