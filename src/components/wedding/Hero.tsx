@@ -134,7 +134,7 @@ const Hero = () => {
           Ens casem!
         </motion.p>
 
-        <motion.img alt="Paula i Adrià" className="w-80 md:w-[26rem] lg:w-[32rem] h-auto mb-12" initial={{
+        <motion.img alt="Paula i Adrià" className="w-[22rem] md:w-[30rem] lg:w-[38rem] h-auto mb-14" initial={{
         opacity: 0,
         y: 20
       }} animate={{
